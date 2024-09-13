@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    --slate-900: #1f314f;
+    --gray-950: #111;
+    --gray-500: #6b6b6b;
+    --slate-500: #68778d;
+    --yellow: #f4d04e;
+    --white: #fff;
+    --card-container-gap: 24px;
+    --card-container-padding: 16px;
+    --text-14px-em: 0.8750em;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    min-height: 100svh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-container-gap);
+    padding: var(--card-container-padding);
+    background-color: var(--white);
+    border-radius: 20px;
+    max-width: 20rem;
+    box-shadow: 8px 8px 0px 0px #000;
+    margin-inline: 24px;
+}
+
+.card-image {
+    border-radius: 10px;
+    display: block;
+    max-width: 100%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.card-published {
+    color: var(--gray-950);
+    font-size: var(--text-14px-em);
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.flex {
+    display: flex;
+}
+
+.card-category {
+    padding: 4px 12px;
+    font-weight: 800;
+    font-size: var(--text-14px-em);
+    background-color: var(--yellow);
+    border-radius: 4px;
+}
+
+.card-title-text {
+    line-height: 120%;
+    font-weight: bold;
+    font-size: 1.3750em;
+    color: var(--gray-950);
+}
+
+.card-title:hover, .card-title:active, .card-title:focus {
+    color: var(--yellow);
+}
+
+.card-desc-text {
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--gray-500);
+}
+
+.user-info-box {
+    gap: 12px;
+    align-items: center;
+}
+
+.user-avatar {
+    border-radius: 50px;
+    display: block;
+    max-width: 10%;
+}
+
+.user-name {
+    font-size: var(--text-14px-em);
+    font-weight: 800;
+    line-height: 150%;
+    color: var(--gray-950);
+}
