@@ -30,7 +30,7 @@ body {
     padding: var(--card-container-padding);
     background-color: var(--white);
     border-radius: 20px;
-    max-width: 20rem;
+    max-width: 22rem;
     box-shadow: 8px 8px 0px 0px #000;
     margin-inline: 24px;
 }
